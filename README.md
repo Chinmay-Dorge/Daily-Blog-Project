@@ -23,6 +23,10 @@ npm install
 
 You are now ready to get to work!
 ---
+First you need to open the terminal to home directory and enter
+```
+mongod
+```
 To run the project, you need to run the command
 ```
 node app.js
