@@ -1,13 +1,18 @@
-# Daily-Blog-Project
+# Daily Blog Project
 
-A website that will work as a diary where you can post your daily experiences
+A website where you can share your ideas with others
 
 ---
-## Requirements
+### Deployed On
+```
+https://obscure-plateau-67224.herokuapp.com/
+```
+
+---
+## Requirements to run locally
 
 For running the project, you will need Node.js , NPM and MongoDB installed on your local device.
 
----
 ### To run the program
 First, clone the repository
 
