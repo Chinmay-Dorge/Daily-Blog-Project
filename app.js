@@ -5,9 +5,7 @@ var _ = require('lodash');
 const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://Chinmay:26042019@cluster0.5yvbe.mongodb.net/blogDB', {useNewUrlParser: true, useUnifiedTopology: true});
 
-const homeStartingContent = "Below you will see others and your shared ideas. To do so, click on compose and enter content";
-const aboutContent = "A blog where you can share your ideas with others. Made by Chinmay Dorge";
-const contactContent = "Lorem ipsum";
+const homeStartingContent = "";
 
 const app = express();
 
@@ -27,19 +25,10 @@ app.get("/",(req,res)=>{
   Post.find({},(err,result)=>{
     if(!err){
       res.render("home",{
-        homeStartingContent: homeStartingContent,
         posts: result
       });
     }
   });
-});
-
-app.get("/about",(req,res)=>{
-  res.render("about",{aboutContent: aboutContent});
-});
-
-app.get("/contact",(req,res)=>{
-  res.render("contact",{contactContent: contactContent});
 });
 
 app.get("/compose",(req,res)=>{

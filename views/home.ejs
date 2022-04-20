@@ -1,7 +1,8 @@
 <%- include('./partials/header.ejs') %>
 
-<h1>Home</h1>
-<p><%= homeStartingContent %></p>
+<h1 class="text-center">Home</h1>
+<p class="text-center">Below you will see others and your shared ideas. To do so, click on compose and enter content</p>
+
 <% posts.forEach((data)=>{ %>
     <div>
         <h1><%= data.title %></h1>
